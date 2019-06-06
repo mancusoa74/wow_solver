@@ -17,7 +17,7 @@ def solve(args):
 
     words = it.permutations(args.c, int(args.l))
     for w in words:
-        word = ''.join(list(w))
+        word = ''.join(list(w)).upper()
         if word in dizio:
             if args.cp:
                 if word[int(args.cp) - 1] == args.cc:
@@ -30,7 +30,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Help to solve Words of \
                                                   Wonders puzzle game')
     parser.add_argument('-c', help='characters of the puzzle', required=True)
-    parser.add_argument('-l', help='length of the word <3..6>', required=True)
+    parser.add_argument('-l', help='length of the word <3..7>', required=True)
     parser.add_argument('-cp', help='character constraint position')
     parser.add_argument('-cc', help='character constraint')
 

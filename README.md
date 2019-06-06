@@ -4,6 +4,8 @@ This simple tool helps to solve Words of Wonder puzle game on Android and IOS
 
 This version is for Italian language. In order to use it for other languages just replace the txt dictionary file
 
+Words from https://www.listediparole.it/
+
 ## Syntax
 
 ```
